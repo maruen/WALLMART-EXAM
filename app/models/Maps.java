@@ -1,21 +1,16 @@
 package models;
 
 import javax.persistence.Entity;
-import javax.persistence.Id;
 
 import play.data.validation.Constraints;
 
 import com.avaje.ebean.Model;
 
 @Entity
-public class MapsInfo extends Model {
-
-    @Id
-    @Constraints.Min(10)
-    public Long id;
-
+public class Maps extends Model {
+    
     @Constraints.Required
-    public String map;
+    public String mapName;
     
     @Constraints.Required
     public String origin;
