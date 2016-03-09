@@ -109,7 +109,7 @@ public class HomeController extends Controller {
         script           =  script.concat(File.separator)
                                                .concat("scripts")
                                                .concat(File.separator)
-                                               .concat("getRouteWithLessCostScript.sh");
+                                               .concat("getRouteWithLessCost.sh");
 
         try {
             FileOutputStream out =  new FileOutputStream(new File(filename));
