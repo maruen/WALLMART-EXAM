@@ -120,6 +120,10 @@ public class RouteService extends Controller {
 	        
 	        String key = route.origin.concat("-").concat(route.destiny);
 	        routesMultiMap.put(key,distance.doubleValue() );
+	        
+	        String allWayValue = route.origin.concat(route.destiny);
+	        allWaysMap.put(key, allWayValue);
+	        
 	    }
 	    
 	    List<String> keys = Lists.newArrayList();
