@@ -1,49 +1,36 @@
-This is your new Play application
+WALLMART EXAM BY MARUEN MEHANA
 =================================
 
-This file will be packaged with your application when using `activator dist`.
 
-There are several demonstration files available in this template.
+MOTIVAÇÃO
+=========
 
-Controllers
-===========
+Minha motivação ao escrever este WebServices foi desenvolver uma solução e arquitetura utilizando tecnologias que fossem de fácil uso, aprendizado e produtividade.
+Para este objetivo foi escolhida a linguagem Java e a Framework Playframework (http://playframework.com)
+A solução foi hospedada temporariamente para a avaliação em um servidor cloud numa VPS do OVH (https://www.ovh.com)
 
-- HomeController.java:
+Quaisquer dúvidas, sugestões, e comentários referentes a este exame e este processo, meus contatos estão abaixo
+Email: maruen@gmail.com
+Telefone: (11) 98438.8499
 
-  Shows how to handle simple HTTP requests.
 
-- AsyncController.java:
+INSTRUÇOES DE USO
+=================
 
-  Shows how to do asynchronous programming when handling a request.
+	I.   Caso se esteja usando Sistema Operacional Windows, faça o download do GIT através de um dos endereços abaixo
+        e instale de acordo com a sua plataforma.
 
-- CountController.java:
+        32 BITS: https://github.com/git-for-windows/git/releases/download/v2.7.0.windows.1/Git-2.7.0-32-bit.exe
+        64 BITS: https://github.com/git-for-windows/git/releases/download/v2.7.0.windows.1/Git-2.7.0-64-bit.exe
 
-  Shows how to inject a component into a controller and use the component when
-  handling requests.
+   II.  Popule o arquivo insertMap.json que se encontra no diretório scripts com as informações de rotas do mapa a ser inserido, 
+        segundo a formatação dada como exemplo.
 
-Components
-==========
+   II.  Abra um terminal de bash caso esteja usando LINUX ou MAC ou um terminal do GIT BASH caso esteja usando
+        o WINDOWS, e execute o comando insertMap.sh no mesmo diretório que se encontra o arquivo insertMap.json.
 
-- Module.java:
+	III. Para obter a rota de menor custo após ter feito a inserção do mapa no passo anterior, no mesmo terminal bash execute
+        o comando ./getRouteWithLessCost.sh <MAPA> <ORIGEM> <DESTINO> <AUTONOMIA> <PREÇO COMBÚSTIVEL>
+		  ex.: /getRouteWithLessCost.sh Map1 A D 10 2.5
 
-  Shows how to use Guice to bind all the components needed by your application.
-
-- Counter.java:
-
-  An example of a component that contains state, in this case a simple counter.
-
-- ApplicationTimer.java:
-
-  An example of a component that starts when the application starts and stops
-  when the application stops.
-
-Filters
-=======
-
-- Filters.java:
-
-  Creates the list of HTTP filters used by your application.
-
-- ExampleFilter.java
-
-  A simple filter that adds a header to every response.
+  
