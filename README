@@ -25,9 +25,9 @@ INSTRUÇOES DE USO
              64 BITS: https://github.com/git-for-windows/git/releases/download/v2.7.0.windows.1/Git-2.7.0-64-bit.exe
 
      II.  Faça o download dos arquivos insertMap.json, insertMap.sh e getRouteWithLessCost.sh nos links abaixos:
-		     http://45.56.121.7:9000/downloadInsertMapJson
-		     http://45.56.121.7:9000/downloadInsertMapScript
-		     http://45.56.121.7:9000/downloadGetRouteWithLessCostScript
+             http://45.56.121.7:9000/downloadInsertMapJson
+             http://45.56.121.7:9000/downloadInsertMapScript
+             http://45.56.121.7:9000/downloadGetRouteWithLessCostScript
 
     III.  Popule o arquivo insertMap.json que se encontra no diretório scripts com as informações de rotas do mapa a ser inserido, 
           segundo a formatação dada como exemplo.
