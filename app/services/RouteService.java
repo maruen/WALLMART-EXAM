@@ -80,8 +80,8 @@ public class RouteService extends Controller {
             }
         }
 
-        return ok(Json.toJson(mapList));
-
+        JsonNode jsonNode = Json.toJson(mapList);
+        return ok(Utils.beautifyJson(jsonNode.toString()));
 	    
 	}
 	
