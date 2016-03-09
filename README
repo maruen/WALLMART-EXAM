@@ -5,7 +5,8 @@ WALLMART EXAM BY MARUEN MEHANA
 MOTIVAÇÃO
 =========
 
-     Minha motivação ao escrever este WebServices foi desenvolver uma solução e arquitetura utilizando tecnologias que fossem de fácil uso, aprendizado e produtividade.
+     Minha motivação ao escrever este WebServices foi desenvolver uma solução e arquitetura utilizando tecnologias
+     que fossem de fácil uso, aprendizado e produtividade.
      Para este objetivo foi escolhida a linguagem Java e a Framework Playframework (http://playframework.com)
      A solução foi hospedada temporariamente para a avaliação em um servidor cloud numa VPS no Linode (https:///www.linode.com)
  
@@ -17,7 +18,8 @@ MOTIVAÇÃO
 INSTRUÇOES DE USO
 =================
 
-     I.   Caso se esteja usando Sistema Operacional Windows, faça o download do GIT através de um dos endereços abaixo e instale de acordo com a sua plataforma.
+     I.   Caso se esteja usando Sistema Operacional Windows, faça o download do GIT através de um dos endereços abaixo
+          e instale de acordo com a sua plataforma.
 
              32 BITS: https://github.com/git-for-windows/git/releases/download/v2.7.0.windows.1/Git-2.7.0-32-bit.exe
              64 BITS: https://github.com/git-for-windows/git/releases/download/v2.7.0.windows.1/Git-2.7.0-64-bit.exe
@@ -29,12 +31,14 @@ INSTRUÇOES DE USO
              
              obs.: Não esqueça de dar permissão de execução aos arquivos insertMap.sh e getRouteWithLessCost.sh
 
-    III.  Popule o arquivo insertMap.json que se encontra no diretório scripts com as informações de rotas do mapa a ser inserido, segundo a formatação dada como exemplo.
+    III.  Popule o arquivo insertMap.json que se encontra no diretório scripts com as informações de rotas do mapa a ser inserido, 
+          segundo a formatação dada como exemplo.
 
-     IV.  Abra um terminal de bash caso esteja usando LINUX ou MAC ou um terminal do GIT BASH caso esteja usando o WINDOWS, e execute o comando insertMap.sh no mesmo diretório que se encontra o arquivo insertMap.json.
+     IV.  Abra um terminal de bash caso esteja usando LINUX ou MAC ou um terminal do GIT BASH caso esteja usando
+          o WINDOWS, e execute o comando insertMap.sh no mesmo diretório que se encontra o arquivo insertMap.json.
 
-      V.  Para obter a rota de menor custo após ter feito a inserção do mapa no passo anterior, no mesmo terminal bash execute o comando 
-          ./getRouteWithLessCost.sh <MAPA> <ORIGEM> <DESTINO> <AUTONOMIA> <PREÇO COMBÚSTIVEL>
+      V.  Para obter a rota de menor custo após ter feito a inserção do mapa no passo anterior, no mesmo terminal bash execute
+          o comando ./getRouteWithLessCost.sh <MAPA> <ORIGEM> <DESTINO> <AUTONOMIA> <PREÇO COMBÚSTIVEL>
           ex.: /getRouteWithLessCost.sh Map1 A D 10 2.5
 
   
