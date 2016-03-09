@@ -1,9 +1,18 @@
 package controllers;
 
-import play.*;
-import play.mvc.*;
+import static constants.Constants.WALLMART_HOME;
 
-import views.html.*;
+import java.io.File;
+import java.io.IOException;
+import java.nio.charset.Charset;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+
+import play.mvc.Controller;
+import play.mvc.Result;
+
+
+import views.html.index;
 
 /**
  * This controller contains an action to handle HTTP requests
@@ -18,7 +27,23 @@ public class HomeController extends Controller {
      * <code>GET</code> request with a path of <code>/</code>.
      */
     public Result index() {
-        return ok(index.render("Your new application is ready."));
+        String wallmartHome = System.getenv(WALLMART_HOME);
+        wallmartHome = wallmartHome.concat(File.separator).concat("README");
+        
+        String readme = null;
+        try {
+            readme = readFile(wallmartHome,Charset.defaultCharset());
+        } catch (IOException e) {
+            readme    = ""; 
+        }
+        
+        return ok(index.render(readme));
     }
+    
+    
+    static String readFile(String path, Charset encoding) throws IOException  {
+        byte[] encoded = Files.readAllBytes(Paths.get(path));
+        return new String(encoded, encoding);
+     }
 
 }

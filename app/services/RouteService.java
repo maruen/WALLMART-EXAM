@@ -1,6 +1,7 @@
 package services;
 
 import static com.mysql.jdbc.StringUtils.isNullOrEmpty;
+import static constants.Constants.WALLMART_HOME;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -29,8 +30,7 @@ import com.google.common.collect.Lists;
 public class RouteService extends Controller {
 	
 	
-	private static SimpleDateFormat sdf1               = new SimpleDateFormat("dd-MM-yyyy.HH-mm-ss");
-	private static String           WALLMART_HOME      = "WALLMART_HOME";
+	private static SimpleDateFormat sdf1 = new SimpleDateFormat("dd-MM-yyyy.HH-mm-ss");
 	
 	
 	public Result insertMap() {
