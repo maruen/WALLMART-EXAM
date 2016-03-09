@@ -18,20 +18,25 @@ Telefone: (11) 98438.8499
 INSTRUÇOES DE USO
 =================
 
-	I.   Caso se esteja usando Sistema Operacional Windows, faça o download do GIT através de um dos endereços abaixo
-        e instale de acordo com a sua plataforma.
+     I.   Caso se esteja usando Sistema Operacional Windows, faça o download do GIT através de um dos endereços abaixo
+          e instale de acordo com a sua plataforma.
 
-        32 BITS: https://github.com/git-for-windows/git/releases/download/v2.7.0.windows.1/Git-2.7.0-32-bit.exe
-        64 BITS: https://github.com/git-for-windows/git/releases/download/v2.7.0.windows.1/Git-2.7.0-64-bit.exe
+             32 BITS: https://github.com/git-for-windows/git/releases/download/v2.7.0.windows.1/Git-2.7.0-32-bit.exe
+             64 BITS: https://github.com/git-for-windows/git/releases/download/v2.7.0.windows.1/Git-2.7.0-64-bit.exe
 
-   II.  Popule o arquivo insertMap.json que se encontra no diretório scripts com as informações de rotas do mapa a ser inserido, 
-        segundo a formatação dada como exemplo.
+     II.  Faça o download dos arquivos insertMap.json, insertMap.sh e getRouteWithLessCost.sh nos links abaixos:
+		     http://45.56.121.7:9000/downloadInsertMapJson
+		     http://45.56.121.7:9000/downloadInsertMapScript
+		     http://45.56.121.7:9000/downloadGetRouteWithLessCostScript
 
-   II.  Abra um terminal de bash caso esteja usando LINUX ou MAC ou um terminal do GIT BASH caso esteja usando
-        o WINDOWS, e execute o comando insertMap.sh no mesmo diretório que se encontra o arquivo insertMap.json.
+    III.  Popule o arquivo insertMap.json que se encontra no diretório scripts com as informações de rotas do mapa a ser inserido, 
+          segundo a formatação dada como exemplo.
 
-	III. Para obter a rota de menor custo após ter feito a inserção do mapa no passo anterior, no mesmo terminal bash execute
-        o comando ./getRouteWithLessCost.sh <MAPA> <ORIGEM> <DESTINO> <AUTONOMIA> <PREÇO COMBÚSTIVEL>
-		  ex.: /getRouteWithLessCost.sh Map1 A D 10 2.5
+     IV.  Abra um terminal de bash caso esteja usando LINUX ou MAC ou um terminal do GIT BASH caso esteja usando
+          o WINDOWS, e execute o comando insertMap.sh no mesmo diretório que se encontra o arquivo insertMap.json.
+
+      V.  Para obter a rota de menor custo após ter feito a inserção do mapa no passo anterior, no mesmo terminal bash execute
+          o comando ./getRouteWithLessCost.sh <MAPA> <ORIGEM> <DESTINO> <AUTONOMIA> <PREÇO COMBÚSTIVEL>
+          ex.: /getRouteWithLessCost.sh Map1 A D 10 2.5
 
   
