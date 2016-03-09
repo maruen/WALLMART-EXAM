@@ -104,7 +104,7 @@ public class RouteService extends Controller {
 	    List<Map> routes = Map.getRoutesByMap(map);
 	    
 	    if (routes.isEmpty()) {
-	        return ok("Não foi encontrado nenhum mapa com o nome passado, [nome= " + map + "]"); 
+	        return ok("Não foi encontrado nenhum mapa com o nome '" + map + "'"); 
 	    }
 	    
 	    LinkedListMultimap<String, Double> routesMultiMap = LinkedListMultimap.create();
@@ -201,12 +201,12 @@ public class RouteService extends Controller {
             fuelCostAsNumber = 2.50;
         }
         
-	    Double nearestDistance = routesMultiMap.get(key) != null ? routesMultiMap.get(key).get(lowerCostIndex) : 0.0;
+	    Double nearestDistance = routesMultiMap.get(key).isEmpty() ?  0.0 : routesMultiMap.get(key).get(lowerCostIndex);
 	    Double fuelConsume     = nearestDistance / consumeAvgAsNumber.doubleValue(); 
 	    Double totalCost       = fuelConsume * fuelCostAsNumber.doubleValue();
 	    
-	    String result = "The best route is -> ".concat(allWaysMap.get(key).get(lowerCostIndex));
-	    result        = result.concat("\nThe cost is   -> ").concat(totalCost.toString());
+	    String result = "A melhor rota é: ".concat(allWaysMap.get(key).isEmpty() ? "Não existe esta rota" : allWaysMap.get(key).get(lowerCostIndex));
+	    result        = result.concat("\nO custo é: ").concat(totalCost.toString());
 	      
 	    return ok(result);
 	}
