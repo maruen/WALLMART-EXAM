@@ -28,6 +28,8 @@ INSTRUÇOES DE USO
              http://45.56.121.7:9000/downloadInsertMapJson
              http://45.56.121.7:9000/downloadInsertMapScript
              http://45.56.121.7:9000/downloadGetRouteWithLessCostScript
+             
+             obs.: Não esqueça de dar permissão de execução aos arquivos insertMap.sh e getRouteWithLessCost.sh
 
     III.  Popule o arquivo insertMap.json que se encontra no diretório scripts com as informações de rotas do mapa a ser inserido, 
           segundo a formatação dada como exemplo.

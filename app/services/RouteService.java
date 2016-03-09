@@ -103,6 +103,10 @@ public class RouteService extends Controller {
 	    
 	    List<Map> routes = Map.getRoutesByMap(map);
 	    
+	    if (routes.isEmpty()) {
+	        return ok("Não foi encontrado nenhum mapa com o nome passado, [nome= " + map + "]"); 
+	    }
+	    
 	    LinkedListMultimap<String, Double> routesMultiMap = LinkedListMultimap.create();
 	    LinkedListMultimap<String, String> allWaysMap     = LinkedListMultimap.create();
 	    for (Map route : routes) {
