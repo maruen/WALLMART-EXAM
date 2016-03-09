@@ -201,7 +201,7 @@ public class RouteService extends Controller {
             fuelCostAsNumber = 2.50;
         }
         
-	    Double nearestDistance = routesMultiMap.get(key) != null ? routesMultiMap.get(key).get(lowerCostIndex);
+	    Double nearestDistance = routesMultiMap.get(key) != null ? routesMultiMap.get(key).get(lowerCostIndex) : 0;
 	    Double fuelConsume     = nearestDistance / consumeAvgAsNumber.doubleValue(); 
 	    Double totalCost       = fuelConsume * fuelCostAsNumber.doubleValue();
 	    
